@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+@font-face {
+	font-family: 'digimon';
+	src: url('../font/PixelDigivolve-mOm9.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+  
+}
+
+.fonte{
+	font-family: 'digimon';
+	word-spacing: 5px;
+}
+
+.header{
+	background-color: #00796B;
+}
+
+.menu {
+	width: 100%;
+	justify-content: end;
+	display: flex;
+}
+
+.menu button {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.ola{
+	width: 40.5rem;
+	font-size: 2.7rem; /* 36px */
+	line-height: 2.7rem
+}
+.ola::after{
+	content: '|';
+	margin-left: 5px;
+	opacity: 1;
+    display: inline-block;
+    animation: blink .7s infinite;
+}
+
+.resumo {
+	display: none;
+	width: 40.5rem;
+	font-size: 2.3rem; /* 36px */
+	line-height: 2.7rem
+}
+
+.botao_vamos {
+	display: none;
+}
+
+.resumo::after{
+	content: '|';
+	margin-left: 5px;
+	opacity: 1;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+	}
+  
+	50% {
+		opacity: 0.7;
+	}
+  
+	100% {
+		opacity: 1;
+	}
+  }
+
+  
+.js [data-anime] {
+	opacity: 0;
+  
+  }
+  
+  .js .fadeInDown {
+	transform: translate3d(0,   0px, 0);
+  }
+  
+.js .anime {
+	opacity: 1;
+	transform: none;
+	transition: opacity 800ms, transform 800ms;
+  }
+

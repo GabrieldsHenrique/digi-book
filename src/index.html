@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../src/style.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <title>Digimon</title>
+</head>
+
+<body class="h-full bg-gradient-to-b from-[#0C3459] via-[#5D9DD9] to-[#12518B] min-h-screen px-14 ">
+
+    <header class="flex z-10 sticky w-full  top-0 grid grid-cols-2 items-center py-6 drop-shadow-xl justify-end ">
+        <div class=""><img src="../img/Digimon_Logo.svg" alt="logo" class="w-56 h-auto"> </div>
+
+        <div class="fonte menu  text-white text-2xl  grid grid-cols-3 gap-4">
+            <button
+                class="text-center  border-4 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#FF911A] duration-300">Sobre</button>
+            <button
+                class="text-center  border-4 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#FF911A] duration-300">buscar</button>
+            <button
+                class="text-center  border-4 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#FF911A] duration-300">Contato</button>
+        </div>
+    </header>
+
+
+
+    <main class="flex items-center fonte justify-center items-center mt-16 mb-40 ">
+        <div class=""> <img src="../img/Taichi_Yagami-removebg-preview.png" class="w-auto" alt="Imagem Taichi Yagami">
+        </div>
+
+        <div class="grid place-items-center justify-center items-center ">
+
+            <h1 id="bem-vindo" class="text-white  ola text-center border-4 rounded-xl p-4   shadow-2xl">BEM-VINDO AO Digi-BOOk.</h1>
+            <p id="historia" class="text-white  explicacao text-center border-4 rounded-xl p-4  shadow-xl resumo">Aqui você podera analisar todos os digimons existentes, tendo disponivel filtros para facilitar a sua busca.</p>
+            <button id="botao_bem" data-anime="2600" onclick="esconde('bem-vindo');proximo(historia); " 
+                class="none fadeInDown shadow-xl mt-5 text-white  text-lg  text-center px-4 border-4 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#FF911A]  hover:text-white duration-300">
+                Proximo</button>
+
+            <button id="botao_proximo" data-anime="2600" onclick="" 
+                class="fadeInDown botao_vamos shadow-xl mt-5 text-white  text-lg  text-center px-4 border-4 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#FF911A]  hover:text-white duration-300">
+                Vamos lá</button>
+        </div>
+            
+    </main>
+
+
+
+
+    <script src="../js/simple-anime.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

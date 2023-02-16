@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+@font-face {
+    font-family: barlow-regular;
+    src: url(../font/Barlow-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: barlow-bold;
+    src: url(../font/Barlow-Bold.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: barlow-medium;
+    src: url(../font/Barlow-Medium.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: barlow-light;
+    src: url(../font/Barlow-Light.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    background: #111;
+}
+
+/* Inicio do Header */
+
+.header {
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #111 10%, #603caf, #b34ab5, #111 90%);
+}
+
+.header a{
+    color: #fff;
+    font-size: 1.9vw;
+    text-decoration: none;
+    font-family: Barlow-regular;
+}
+
+.logo {
+    width: 16%;
+    display: flex;
+    padding: 0.5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 25%;
+}
+
+.logo a:hover{
+    transition: all .3s;  
+    transform: scale(1.1); 
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li{
+    padding-left: 9%;
+}
+
+.menu li:hover{
+    transition: all .3s;  
+    transform: scale(1.1);   
+}
+
+/* Fim do Header */
+
+/* Inicio do Porfolio */
+
+.portfolio_text {
+    color: #fff;
+    margin-top: 5vw;
+    margin-left: 9vw;
+    position: absolute;
+}
+
+.portfolio_text h6 {
+    font-size: 12vw;
+    font-family: Barlow-Bold;
+}
+
+.portfolio_text p {
+    color: #fff;
+    font-size: 5vw;
+    font-family: Barlow-light;
+}
+
+.portfolio img{
+    width: 100%;
+}
+
+/* Fim do Portfolio */
+
+/* Inicio do Olá */
+
+.hello {
+    display: grid;
+    padding: 7% 10%;
+    background-color: #d0d0d0;
+    grid-template-columns: 50% 50%;
+}
+
+.hello img{
+    width: 100%;
+    justify-self: center;
+}
+
+.hello_text h2 {
+    color: #111;
+    font-size: 4vw;
+    font-weight: 500;
+    padding-top: 10%;
+    font-style: normal;
+    font-family: Barlow-Medium;
+}
+
+.hello_text p {
+    width: 75%;
+    color: #111;
+    font-size: 2.5vw;
+    font-family: Barlow-light;
+}
+
+.hello_button {
+    width: 45%;
+    height: 9%;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 9px;
+    filter: drop-shadow(2px 6px 7px rgba(0, 0, 0, .2));
+    background: linear-gradient(180deg, #603caf 0, #b34ab5 100%);
+}
+
+.hello_button a {
+    text-decoration: none;
+}
+
+.hello_button p {
+    margin: auto;
+    color: #fff;
+    font-size: 2vw;
+    font-family: Barlow-Regular;
+}
+
+.hello_button:hover {
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+/* Fim Olá */
+
+/* Inicio do Sobre */
+
+.about {
+    display: grid;
+    column-gap: 5%;
+    padding: 8% 10%;
+    grid-template-columns: 55% 40%;
+}
+
+.about_title {
+    color: #fff;
+    font-size: 3vw;
+    font-family: Barlow-Bold;
+}
+
+.about_text {
+    color: #fff;
+    margin-top: 5%;
+    font-size: 2vw;
+    text-align: justify;
+    font-family: Barlow-Light;
+}
+
+.about img{
+    width: 100%;
+    justify-self: center;
+}
+
+.about_button {
+    width: 50%;
+    height: 9%;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 9px;
+    filter: drop-shadow(2px 6px 7px rgba(0, 0, 0, .2));
+    background: linear-gradient(180deg, #603caf, #b34ab5 90%);
+}
+
+.about_button a {
+    text-decoration: none;
+}
+
+.about_button p {
+    margin: auto;
+    color: #fff;
+    font-size: 2vw;
+    font-family: Barlow-Regular;
+}
+
+.about_button:hover {
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+/* Fim do Sobre */
+
+/* Inicio Projeto */
+
+.projects {
+    padding: 5% 10%;
+    background: #d0d0d0;
+}
+
+.projects_title {  
+    font-size: 3vw;
+    padding-bottom: 4%;
+    font-family: Barlow-Bold;
+}
+
+.projects_content {
+    display: grid;
+    justify-items: center;
+}
+
+.projects_list {
+    display: grid;
+    column-gap: 5%;
+    list-style-type: none;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.card {
+    border-radius: 20px;
+    filter: drop-shadow(2px 6px 7px rgba(0, 0, 0, .25))
+}
+
+.card img {
+    width: 90%;
+    padding: 5% 5%;
+}
+
+.card h3 {
+    color: #fff;
+    font-size: 2vw;
+    padding: 0% 5%;
+    font-weight: 300;
+    font-family: Barlow-Medium;
+}
+
+.card p {
+    color: #fff;
+    padding: 5% 5%;
+    font-size: 1.7vw;
+    text-align: justify;
+    font-family: Barlow-light;
+}
+
+.card:hover {
+    transition: all .9s;
+    transform: scale(1.05);
+}
+
+.pink {
+    background: #b34ab5;
+}
+
+.purple {
+    background: #603caf;
+} 
+
+.projects_button {
+    width: 30%;
+    margin-top: 5%;
+    border-radius: 9px;
+    
+    filter: drop-shadow(2px 6px 7px rgba(0, 0, 0, .2));
+    background: linear-gradient(180deg, #603caf, #b34ab5 90%);
+}
+
+.projects_button a {
+    text-decoration: none;
+}
+
+.projects_button p {
+    margin: auto;
+    color: #fff;
+    font-size: 2vw;
+    padding: 1.6% 0%;
+    text-align: center;
+    font-family: Barlow-Regular;
+}
+
+.projects_button:hover {
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+/* Fim Projeto */
+
+/* Inicio Serviço */
+
+.services {
+    padding: 11%;
+    display: grid;
+    column-gap: 5%;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 43% 4% 43%;  
+}
+
+.services_title {
+    color: #fff;
+    font-size: 3vw;
+    padding-bottom: 10%;
+    font-family: Barlow-Bold;
+}
+
+.services_purple_card {
+    width: 90%;
+    color: #fff;
+    padding: 2.5% 0%;
+    font-size: 2.4vw;
+    margin-bottom: 3%;
+    text-align: center;
+    border-radius: 9px;
+    list-style-type: none;
+    background: #603caf;
+    font-family: Barlow-Regular;
+}
+
+.services_pink_card {
+    width: 90%;
+    color: #fff;
+    padding: 2.5% 0%;
+    font-size: 2.4vw;
+    margin-bottom: 3%;
+    text-align: center;
+    border-radius: 9px;
+    list-style-type: none;
+    background: #b34ab5;
+    font-family: Barlow-Regular;
+}
+
+.vertical_line {
+    height: 115%;
+    color: #fff;
+    justify-self: center;
+    border-left: 2px solid; 
+}
+
+.right_side{
+    padding-left: 10%;
+    align-self: start;
+}
+
+.knowledge_list {
+    display: grid;
+    grid-gap: 8% 5%;
+    grid-template-columns: 40% 40%;
+}
+
+.knowledge_purple_card {
+    color: #fff;
+    font-size: 2.4vw;
+    text-align: center;
+    border-radius: 9px;
+    padding: 7% 0% 7% 0%;
+    background: #603caf;
+    font-family: Barlow-Regular;
+}
+
+.knowledge_pink_card {
+    color: #fff;
+    font-size: 2.4vw;
+    text-align: center;
+    border-radius: 9px;
+    padding: 7% 0% 7% 0%;
+    background: #b34ab5;
+    font-family: Barlow-Regular;
+}
+
+/* Fim Serviço */
+
+/* Início Contato */
+
+.contact {
+    text-align: center;
+    padding: 7% 0%;
+    background: #d0d0d0;
+}
+
+.contact_title p {
+    font-size: 3vw;
+    font-family: barlow-bold;
+}
+
+.contact_text li {
+    font-size: 2vw;
+    margin-top: 1.5%;
+    list-style-type: none;
+    font-family: barlow-medium;
+}
+
+/* Fim Contato */
+
+/* Inicio Footer */
+
+.footer {
+    color: #fff;
+    font-size: 2.5vw;
+    text-align: center;
+    padding: 2% 0% 1% 0%;
+    font-family: Barlow-Medium;
+    background: linear-gradient(90deg, #ef564d 15%, #b34ab5 56%, #603caf 98%);
+}
+
+.footer img{
+    width: 25%;
+}
+
+.footer img:hover {
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+/* Fim Footer */
