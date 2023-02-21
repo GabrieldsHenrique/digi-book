@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
 
 @font-face {
 	font-family: 'digimon';
@@ -13,32 +17,17 @@
   
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 .fonte{
 	font-family: 'digimon';
 	word-spacing: 5px;
 }
 
-.header{
-	background-color: #00796B;
-}
 
-.menu {
-	width: 100%;
-	justify-content: end;
-	display: flex;
-}
-
-.menu button {
-	padding-right: 20px;
-	padding-left: 20px;
-}
-
-.ola{
-	width: 40.5rem;
-	font-size: 2.7rem; /* 36px */
-	line-height: 2.7rem
-}
-.ola::after{
+.digitacao::after{
 	content: '|';
 	margin-left: 5px;
 	opacity: 1;
@@ -46,24 +35,6 @@
     animation: blink .7s infinite;
 }
 
-.resumo {
-	display: none;
-	width: 40.5rem;
-	font-size: 2.3rem; /* 36px */
-	line-height: 2.7rem
-}
-
-.botao_vamos {
-	display: none;
-}
-
-.resumo::after{
-	content: '|';
-	margin-left: 5px;
-	opacity: 1;
-    display: inline-block;
-    animation: blink .7s infinite;
-  }
 
   @keyframes blink {
     0%, 100% {
@@ -106,3 +77,61 @@
 	transition: opacity 800ms, transform 800ms;
   }
 
+.tabela tr{
+	border-width: 2px;
+	border-radius: 0.75rem;
+	display: flex;
+	
+}
+
+.tabela img{
+	border-radius: 0.75rem;
+}
+
+.tabela div{
+	display: grid;
+	gap: 0.3rem;
+	justify-content: center;
+	align-items: center;
+	width: 100vh;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+
+}
+
+.tabela td{
+	padding-left: 0.5rem;
+	justify-content: center;
+	align-items: center;
+	width: 42vh;
+	height: 100%;
+	border-width: 2px;
+	border-radius: 0.75rem;
+	background-color: #4778A6;
+}
+
+.tabela tr:hover {
+	transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+
+	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+	
+	transition-delay: 150ms;
+	
+	--tw-translate-y: -0.25rem/* -4px */;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+
+	--tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+
+	--tw-bg-opacity: 1;
+    background-color: rgb(255 145 26 / var(--tw-bg-opacity));
+
+	transition-duration: 300ms;
+
+	border-style:ridge;
+	border-width: 4px;
+
+}
