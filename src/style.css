@@ -111,27 +111,16 @@ html {
 }
 
 .tabela tr:hover {
-	transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+	--tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) 
+	rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) 
+	scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+
+	transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
 
-	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-	
-	transition-delay: 150ms;
-	
-	--tw-translate-y: -0.25rem/* -4px */;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-
-	--tw-scale-x: 1;
-    --tw-scale-y: 1;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-
-	--tw-bg-opacity: 1;
-    background-color: rgb(255 145 26 / var(--tw-bg-opacity));
-
-	transition-duration: 300ms;
-
-	border-style:ridge;
-	border-width: 4px;
+	background-color: #FF911A;
 
 }
