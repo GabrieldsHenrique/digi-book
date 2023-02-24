@@ -65,7 +65,7 @@
 
         <div class=" grid  place-items-center justify-center items-center">
           <h1 id="bem-vindo" class="text-white digitacao text-[2.5rem] w-[25rem] sm:text-[2.2rem]  lg:w-[38.8rem] text-center  lg:text-[2.6rem] border-4 rounded-xl p-4 shadow-2xl ">BEM-VINDO AO Digi-BOOk.</h1>
-          
+          <!-- Esconde os Elementos de bem vindo e faz aparecer a segunda parte da apresentação -->
           <button
           id="botao_bem"
           data-anime="2300"
@@ -145,18 +145,22 @@
             <div class="h-[25rem] col-start-2 lg:grid grid-rows-4 gap-4  items-center hidden ">
               
               <div class="flex h-full justify-center  bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
+                 <!-- Chama a API passando o level desejado -->
                 <button  onclick="level('Training')"><img class=" max-h-16" src="../img/lob1.png" alt=""></button>
               </div>
 
               <div class="flex  h-full justify-center p-1  bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
+                 <!-- Chama a API passando o level desejado -->
                 <button  onclick="level('Rookie')"><img class=" max-h-16" src="../img/lob2.png" alt=""></button>
               </div>
               
               <div class="flex h-full  justify-center p-1  bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
+                <!-- Chama a API passando o level desejado -->
                 <button  onclick="level('Champion')"><img class=" max-h-16" src="../img/lob3.png" alt=""></button>
               </div>
               
               <div class="flex h-full  justify-center p-1  bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
+                <!-- Chama a API passando o level desejado -->
                 <button  onclick="level('Mega')"><img class=" max-h-16"src="../img/lob4.png" alt=""></button>
               </div>
               
@@ -171,18 +175,22 @@
             <div class="h-[25rem] lg:grid grid-rows-4 gap-4  items-center hidden ">
               
               <div class="flex h-full justify-center p-1  bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
+                <!-- Chama a API passando o level desejado -->
                 <button id="" onclick="level('In Training')"><img class=" max-h-16" src="../img/lag1.png" alt=""></button>
               </div>
 
               <div class="flex  h-full justify-center p-1  bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
+                <!-- Chama a API passando o level desejado -->
                 <button id="" onclick="level('Ultimate')"><img class=" max-h-16"src="../img/lag2.png" alt=""></button>
               </div>
               
               <div class="flex h-full  justify-center p-1  bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
+                 <!-- Chama a API passando o level desejado -->
                 <button id="" onclick="level('Fresh')"><img class=" max-h-16" src="../img/lag3.png" alt=""></button>
               </div>
               
               <div class="flex h-full  justify-center p-1  bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
+                <!-- Chama a API passando o level desejado -->
                 <button id="" onclick="level('Armor')"><img class=" max-h-16" src="../img/lag4.png" alt=""></button>
               </div>
               
@@ -207,18 +215,21 @@
             <div class="grid-rows-3 gap-2 h-[25rem] col-start-2 hidden md:grid">
 
               <div class="flex justify-center p-1  bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
-               <button onclick=" esconde('apresentacao'); esconde('koshiro'); esconde('taichi'); esconde('hikari'); esconde('sora'); esconde('yamato'); personagem('takeru');">   
+               <!-- Ao Clicar no botao esconde todos os outros e aparece apenas a div selecionada -->
+                <button onclick=" esconde('apresentacao'); esconde('koshiro'); esconde('taichi'); esconde('hikari'); esconde('sora'); esconde('yamato'); personagem('takeru');">   
                 <img class="max-h-[7.5rem]" src="../img/takeru.png" alt="">
                </button> 
               </div>
                
               <div class="flex justify-center bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
-               <button onclick=" esconde('apresentacao'); esconde('takeru'); esconde('taichi'); esconde('hikari'); esconde('sora'); esconde('yamato'); personagem('koshiro');">  
+                <!-- Ao Clicar no botao esconde todos os outros e aparece apenas a div selecionada -->
+                <button onclick=" esconde('apresentacao'); esconde('takeru'); esconde('taichi'); esconde('hikari'); esconde('sora'); esconde('yamato'); personagem('koshiro');">  
                 <img class="max-h-[7.5rem]" src="../img/koshiro.png" alt="">
                </button> 
               </div>
 
               <div class="flex justify-center  bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
+                 <!-- Ao Clicar no botao esconde todos os outros e aparece apenas a div selecionada -->
                 <button onclick=" esconde('apresentacao'); esconde('koshiro'); esconde('takeru'); esconde('hikari'); esconde('sora'); esconde('yamato'); personagem('taichi');">  
                   <img class="max-h-[7.5rem]" src="../img/taichi.png" alt="">
                 </button>
@@ -255,7 +266,7 @@
                   <p class=" text-white  md:text-[1.7rem] xl:text-[2rem]  text-center "
                   >Takeru Takaishi</p>
 
-                  <p class=" text-white  md:text-[1rem]  xl:text-[1.2rem] border-2 rounded-xl p-4 shadow-2xl text-justify bg-[#4778A6] h-72"
+                  <p class=" text-white  md:text-[1rem]  xl:text-[1.5rem] border-2 rounded-xl p-4 shadow-2xl text-justify bg-[#4778A6] h-72"
                   >Está no 2 ano de escolaridade. É o irmão mais novo de Yamato. Devido a certas circunstâncias, vive separado dele, mas com o incidente do primeiro episódio, começa a desenvolver uma estranha intuição.</p>
                 </div>
 
@@ -263,7 +274,7 @@
                     <p class=" text-white  md:text-[1.7rem] xl:text-[2rem]   text-center "
                     >Dados:</p>
                     <div class="col-span-4 grid grid-rows-6 gap-2 h-72 items-center">
-                      <p class=" text-white md:text-[1rem] border-2 rounded-xl px-2 py-1 shadow-2xl  bg-[#4778A6]"
+                      <p class=" text-white md:text-[1rem]  border-2 rounded-xl px-2 py-1 shadow-2xl  bg-[#4778A6]"
                       >Idade: 8 anos</p>
                       <p class=" text-white md:text-[1rem] border-2 rounded-xl px-2 py-1 shadow-2xl  bg-[#4778A6]"
                       >Ator: Megumi Han</p>
@@ -287,7 +298,7 @@
                   <p class=" text-white  md:text-[1.7rem] xl:text-[2rem]  text-center "
                   >Koushiro Izumi</p>
 
-                  <p class=" text-white  md:text-[1rem]  xl:text-[1.2rem] border-2 rounded-xl p-4 shadow-2xl text-justify bg-[#4778A6] h-72"
+                  <p class=" text-white  md:text-[1rem] xl:text-[1.5rem] border-2 rounded-xl p-4 shadow-2xl text-justify bg-[#4778A6] h-72"
                   >Izzy é um especialista em informática e gasta uma grande fração de seu tempo tentando descobrir coisas em seu laptop "PiBook".
                    Ele é muito inteligente e experiente, e muitas vezes se perde em pensamentos.</p>
                 </div>
@@ -320,7 +331,7 @@
                   <p class=" text-white  md:text-[1.7rem] xl:text-[2rem]   text-center "
                   >Taichi Kamiya</p>
 
-                  <p class=" text-white md:text-[1rem]  xl:text-[1.2rem] border-2 rounded-xl p-4 shadow-2xl text-justify bg-[#4778A6] h-72"
+                  <p class=" text-white md:text-[1rem]  xl:text-[1.5rem] border-2 rounded-xl p-4 shadow-2xl text-justify bg-[#4778A6] h-72"
                   >Tai é enérgico e aventureiro. Ele também age impulsivamente e corre sem pensar nas consequências, 
                    especialmente quando seus amigos estão em perigo, mas é rápido em perceber e admitir que ele estava errado.</p>
                 </div>
@@ -353,7 +364,7 @@
                   <p class=" text-white  md:text-[1.7rem] xl:text-[2rem]   text-center "
                   >Hikari Kamiya</p>
 
-                  <p class=" text-white  md:text-[1rem]  xl:text-[1.2rem] border-2 rounded-xl p-4 shadow-2xl text-justify bg-[#4778A6] h-72"
+                  <p class=" text-white  md:text-[1rem]  xl:text-[1.5rem] border-2 rounded-xl p-4 shadow-2xl text-justify bg-[#4778A6] h-72"
                   > Kari é o doce, inocente e alegre irmão mais novo de um Digidestinado. 
                     Ela sempre procura o melhor lado das pessoas sem recorrer à violência, mas pode ser séria em situações drásticas.</p>
                 </div>
@@ -386,7 +397,7 @@
                   <p class=" text-white md:text-[1.7rem] xl:text-[2rem]   text-center "
                   >Yamato Ishida</p>
 
-                  <p class=" text-white md:text-[1rem]  xl:text-[1.2rem] border-2 rounded-xl p-4 shadow-2xl text-justify bg-[#4778A6] h-72"
+                  <p class=" text-white md:text-[1rem] xl:text-[1.5rem] border-2 rounded-xl p-4 shadow-2xl text-justify bg-[#4778A6] h-72"
                   > Matt começa como um solitário secreto com um comportamento legal. Ele é maduro, pensativo e equilibrado, e mais propenso
                    a pensar nas coisas do que cobrar de frente. Ele é uma pessoa profundamente carinhosa.</p>
                 </div>
@@ -419,7 +430,7 @@
                   <p class=" text-white  md:text-[1.7rem] xl:text-[2rem]   text-center "
                   >Sora Takenouchis</p>
 
-                  <p class=" text-white  md:text-[1rem]  xl:text-[1.2rem] border-2 rounded-xl p-4 shadow-2xl text-justify bg-[#4778A6] h-72"
+                  <p class=" text-white  md:text-[1rem]  xl:text-[1.5rem] border-2 rounded-xl p-4 shadow-2xl text-justify bg-[#4778A6] h-72"
                   > Sora é gentil, responsável, carinhosa e protetora, com seu primeiro instinto sendo tentar ajudar os outros de qualquer maneira que puder, 
                     muito parecido com uma mãe. Está sempre disposta a ajudar.</p>
                 </div>
@@ -453,28 +464,32 @@
             <!-- Seleção de Personagens -->
             <div class="grid-rows-3 gap-2 h-[25rem] hidden md:grid">
               <div class="flex justify-center bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
+                <!-- Ao Clicar no botao esconde todos os outros e aparece apenas a div selecionada -->
                 <button onclick=" esconde('apresentacao'); esconde('koshiro'); esconde('takeru'); esconde('taichi'); esconde('sora'); esconde('yamato'); personagem('hikari');"> 
                   <img class="max-h-[7.5rem]" src="../img/hikari.png" alt="">
                 </button>
               </div>
                
               <div class="flex justify-center bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
+                <!-- Ao Clicar no botao esconde todos os outros e aparece apenas a div selecionada -->
                 <button onclick=" esconde('apresentacao'); esconde('koshiro'); esconde('takeru'); esconde('hikari'); esconde('sora'); esconde('taichi'); personagem('yamato');">
                   <img class="max-h-[7.5rem] " src="../img/yamato.png" alt="">
                 </button>
               </div>
 
               <div class="flex justify-center bg-[#4778A6] border-2 rounded-2xl transition ease-in delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-[#FF911A] duration-300 ">
+                 <!-- Ao Clicar no botao esconde todos os outros e aparece apenas a div selecionada -->
                 <button  onclick=" esconde('apresentacao'); esconde('koshiro'); esconde('takeru'); esconde('taichi'); esconde('hikari'); esconde('yamato'); personagem('sora');">
                   <img class="max-h-[7.5rem]" src="../img/sora.png" alt="">
                 </button>
               </div>
             </div>
             <!-- Seleção de Personagens -->
-
-    
-           
           </div>
+
+         <!-- Fim Sobre -->
+
+         <!-- Inicio Footer -->
           <footer id="footer" class="relative bottom-0 w-full  text-white py-8">
             <div class="container mx-auto">
               <p class="text-center text-xl digitacao ">
@@ -483,16 +498,16 @@
                 <a
                   class="hover:text-orange-500"
                   href="https://github.com/GabrielSilva2012/"
-                > Gabriel Henrique
-                  </a>
+                > Gabriel Henrique</a>
               </p>
             </div>
-          </footer>          
-  
-  
-  <!-- Fim Sobre -->
+          </footer>      
+           <!-- Fim Footer -->
+
+           <!-- Chamando documento JS -->
     <script src="../js/api.js"></script>
     <script src="../js/simple-anime.js"></script>
     <script src="../js/script.js"></script>
+
   </body>
 </html>

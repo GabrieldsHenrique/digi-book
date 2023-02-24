@@ -1,3 +1,5 @@
+
+// Requisição para API
 function fazGet(url) {
     let request = new XMLHttpRequest()
     request.open("GET", url, false)
@@ -6,9 +8,10 @@ function fazGet(url) {
 
 }
 
+// Criando Tabela (TD e TR) Com dados adquiridos da API
 function criaLinha(digimon){
     linha = document.createElement("tr");
-    teste = document.createElement("div");
+    div = document.createElement("div");
     tdNome = document.createElement("td");
     tdLevel = document.createElement("td");
     tdIMG = document.createElement("img");
@@ -20,16 +23,19 @@ function criaLinha(digimon){
 
 
 
-    teste.appendChild(tdNome);
-    teste.appendChild(tdLevel);
+    div.appendChild(tdNome);
+    div.appendChild(tdLevel);
     linha.appendChild(tdIMG);
-    linha.appendChild(teste)
+    linha.appendChild(div)
 
 
     return linha;
     
 }
 
+// Faz a requisição para a API e cria a tabela fazendo um for com os elementos passados da API, cada elemento gera uma tabela e appenda no 
+// Id Tabela aonde os dados serem imprimidos
+// Essa funcao inicia junto com a pagina
 function main(){
     limpar();
     let data = fazGet("https://digimon-api.vercel.app/api/digimon/")
@@ -41,6 +47,7 @@ function main(){
     });
 }
 
+// Limpa a ID-tabela para quando os proximos dados serem imprimidos
 function limpar(){
     
     var tabela = document.getElementById('tabela');
@@ -54,6 +61,8 @@ function limpar(){
     
 }
 
+// Faz a requisição para a API e cria a tabela fazendo um for com os elementos passados da API, cada elemento gera uma tabela e appenda no 
+// Id Tabela aonde os dados serem imprimidos
 function level(level){
     limpar();
     
@@ -66,6 +75,10 @@ function level(level){
     });
 }
 
+// Faz a requisição para a API e cria a tabela fazendo um for com os elementos passados da API, cada elemento gera uma tabela e appenda no 
+// Id Tabela aonde os dados serem imprimidos
+// Se a ao chamar a funcao o Input tiver vazio não faz nada
+// Quando chamar a funcao pega o Valor do imput e faz a requisição para a API
 function buscaName(){
 
     if(document.getElementById('buscaNome').value == ""){
@@ -85,7 +98,10 @@ function buscaName(){
     }
     
 }
-
+// Faz a requisição para a API e cria a tabela fazendo um for com os elementos passados da API, cada elemento gera uma tabela e appenda no 
+// Id Tabela aonde os dados serem imprimidos
+// Se a ao chamar a funcao o Input tiver vazio não faz nada
+// Quando chamar a funcao pega o Valor do imput e faz a requisição para a API
 function buscaLevel(){
     document.getElementById('buscaLevel').value
 
